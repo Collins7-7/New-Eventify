@@ -40,7 +40,7 @@ function App() {
       <Router>
         {role === "admin"? <AdminApp setStoredToken={setStoredToken}/> : 
         <div>
-        <Navbar />
+        <Navbar setStoredToken={setStoredToken}/>
         <Routes>
         <Route path= '/' element={<Home/>} exact/>
         <Route path= '/about' element={<About setStoredToken={setStoredToken}/>} exact />
