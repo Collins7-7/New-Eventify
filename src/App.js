@@ -5,6 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import AdminApp from './components/Admin/AdminApp';
+import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Event from './components/Event';
+import Contact from './components/Contact';
+
 
 function App() {
   const [storedToken, setStoredToken] = useState(localStorage.getItem("token"));
@@ -33,6 +40,13 @@ function App() {
       <Router>
         {role === "admin"? <AdminApp setStoredToken={setStoredToken}/> : 
         <div>
+        <Navbar />
+        <Routes>
+        <Route path= '/' element={<Home/>} exact/>
+        <Route path= '/about' element={<About setStoredToken={setStoredToken}/>} exact />
+        <Route path= '/events' element={<Event setStoredToken={setStoredToken}/>} exact />
+        <Route path= '/contact' element={<Contact setStoredToken={setStoredToken}/>} exact />
+        </Routes>
         </div>}
         
       </Router>
