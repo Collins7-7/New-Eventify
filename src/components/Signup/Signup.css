@@ -1,0 +1,64 @@
+.signup{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background:url("https://images.unsplash.com/photo-1571292098320-997aa03a5d19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1540&q=80"); */
+    background-size: cover;
+}
+
+.signupTitle{
+    font-size: 50px;
+}
+.signupForm{
+    width: 30%;
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    /* background-color: rgb(138, 24, 24); */
+    border-style: none;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: rgba(158, 157, 157, 0.514);
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.signupForm > label{
+margin: 10px 0;
+}
+
+.signupInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.signupButt{
+    margin-top: 30px;
+    cursor: pointer;
+    background-color:rgb(13, 105, 209);
+    border:none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+}
+
+.signupLoginButton{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgb(202, 64, 202);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
