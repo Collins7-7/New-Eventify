@@ -4,8 +4,6 @@ import { useState } from "react";
 import "./Signup.css";
 
 
-
-
 const Signup = ({setStoredToken}) => {
 
  const [username, setUsername] = useState("");

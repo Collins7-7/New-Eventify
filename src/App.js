@@ -1,5 +1,10 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
+import AdminApp from './components/Admin/AdminApp';
 
 function App() {
   const [storedToken, setStoredToken] = useState(localStorage.getItem("token"));
@@ -27,12 +32,8 @@ function App() {
     {storedToken ? (
       <Router>
         {role === "admin"? <AdminApp setStoredToken={setStoredToken}/> : 
-        <>
-        <Navbar setStoredToken={setStoredToken}/>
-        <Routes>
-        </Routes>
-        <Footer /> 
-        </>}
+        <div>
+        </div>}
         
       </Router>
     ) : (
