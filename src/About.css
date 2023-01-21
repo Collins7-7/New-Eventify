@@ -1,0 +1,120 @@
+.contactus{
+    background-image: url("https://media.istockphoto.com/id/1212689128/photo/table-setting-with-white-table-cloth-with-no-food.jpg?s=170667a&w=0&k=20&c=v_Hc8kucGZ2dCvtf9MOf2r2GRax1Tt3dM4KLG9kyQNY=");
+    height: 40vh;
+    background-size: cover;
+}
+.contactus h1{
+    color: white;
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+.about-section{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* background-color: blue;   */
+}
+
+.section1-image img{
+    margin-top: 40px;
+    height: 400px;
+    width: 580px;
+    margin-left: 20px;
+}
+.about-section1{
+    margin-right: 30px;
+    color: black;
+    font-size: 16px;
+    
+}
+.about-section1 h2{
+    padding-top: 60px;
+    font-size: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    color: rgba(2, 2, 56, 0.966);
+}
+.about-section1 p{
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    text-align: left;
+    word-spacing: 2px;
+}
+.about-section1 h3{
+    font-weight: 200;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: rgba(2, 2, 56, 0.966);
+}
+
+.team{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.089);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.team1{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 80px;
+}
+.team1 img{
+    margin-top: 20px;
+    height: 60%;
+    width: 30%;
+    margin-right: 10px;
+}
+.team h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.cards{
+    background-color: white;
+    margin-top: 20px;
+    width: 30%;
+    height: 40%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    /* border-color: black; */
+    /* outline-style: solid; */
+}
+.card-img-top{
+    height: 240px;
+    width: 380px;
+}
+.card-text{
+    text-align:left;
+    padding: 8px;
+}
+
+.card-heading{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgba(2, 2, 56, 0.966);
+}
+.about-card{
+    display: flex;
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.089);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.service-card h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.partnership{
+    margin-top: 40px;
+}
+.partnership h2{
+    text-align: center;
+}
