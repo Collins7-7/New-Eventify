@@ -49,7 +49,7 @@ export const Review = ({ formData, navigation }) => {
         style={{ marginTop: '1.5rem' }}
         onClick={() => go('submit')}
       >
-        Book
+        Get Tickets
       </Button>
       <h4>Kindly confirm your details before proceeding to book</h4>
     </Container>
