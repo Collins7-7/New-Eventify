@@ -3,7 +3,7 @@ import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 export const Address = ({ formData, setForm, navigation }) => {
-  const { address, city, state, zip } = formData;
+  const { address, city, state, totalTicket } = formData;
   return (
     <Container maxWidth="xs">
       <h3>Address</h3>
@@ -39,10 +39,10 @@ export const Address = ({ formData, setForm, navigation }) => {
         fullWidth
       />
       <TextField
-        label="Total tickets"
-        name="total tickets"
+        label="Total Tickets"
+        name="totalTickets"
         type="number"
-        value={zip}
+        value={totalTicket}
         onChange={setForm}
         margin="normal"
         variant="outlined"
