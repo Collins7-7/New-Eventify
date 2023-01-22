@@ -3,19 +3,11 @@ import { Link } from 'react-router-dom'
 import Categories from './Categories'
 
 function Event() {
-  const [categories, setCategories] = useState([])
   const [events, setEvents] = useState([])
-  const [selectedCategory, setSelectedCategory] = useState("Business")
+  const [selectedCategory, setSelectedCategory] = useState("Categories")
 
   useEffect(() => {
-    fetch("http://127.0.0.1:3000/api/v1/categories")
-      .then((r) => r.json())
-      .then((categories) => setCategories(categories))
-
-  }, [])
-
-  useEffect(() => {
-    fetch("http://127.0.0.1:3000/api/v1/events")
+    fetch("https://eventify-app.onrender.com/api/v1/events")
       .then((r) => r.json())
       .then((events) => setEvents(events))
 
@@ -26,7 +18,7 @@ function Event() {
   }
 
   const filteredEvents = events.filter((event) => {
-    if (selectedCategory === "Business") {
+    if (selectedCategory === "Categories") {
       return true
     } else {
       return event.category.name === selectedCategory;
@@ -35,7 +27,7 @@ function Event() {
 
   return (
     <>
-      <Categories categories={categories} onChange={handleChange}/>
+      <Categories onChange={handleChange}/>
       <section className='section'>
         {filteredEvents.map((event) => {
           return (
