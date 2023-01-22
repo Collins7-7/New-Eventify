@@ -46,7 +46,8 @@ function App() {
         <Route path= '/' element={<Home/>} exact/>
         <Route path= '/about' element={<About setStoredToken={setStoredToken}/>} exact />
         <Route path= '/events' element={<Event setStoredToken={setStoredToken}/>} exact />
-        <Route path= 'events/:id' element={<Eventdetails setStoredToken={setStoredToken}/>}/>
+        <Route path= 'events/:id' element={<Eventdetails setStoredToken={setStoredToken}/>} />
+        <Route path= 'events/:id/book_event' element={<h2>Booking form {/*setStoredToken={setStoredToken}*/} </h2>} />
         <Route path= '/contact' element={<Contact setStoredToken={setStoredToken}/>} exact />
         </Routes>
         </div>}

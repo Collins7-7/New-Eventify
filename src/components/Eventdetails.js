@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import "../Event.css"
 
 function Eventdetails() {
@@ -11,7 +11,7 @@ function Eventdetails() {
     .then((r) => r.json())
     .then((event) => setEvent(event))
 
-  }, [])
+  }, [id])
 
   return (
     <div className='container-1'>
@@ -28,7 +28,9 @@ function Eventdetails() {
         <h4>{`Total tickets: ${event.total_tickets}`}</h4>
         <h4>{`Remaininng tickets: ${event.remaining_tickets}`}</h4>
         <h4>{`Amount: ${event.amount}`}</h4>
-        <button className='ticket-btn'>Buy Ticket</button>
+        <Link to={`/events/${event.id}/book_event`}>
+          <button className='ticket-btn'>Buy Ticket</button>
+        </Link>
       </div>
     </div>
   )
