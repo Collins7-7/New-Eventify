@@ -11,6 +11,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Event from './components/Event';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
 
   return (
     <div>
+      <Navbar /> {/*to be removed*/}
     {storedToken ? (
       <Router>
         {role === "admin"? <AdminApp setStoredToken={setStoredToken}/> : 
@@ -54,12 +56,15 @@ function App() {
       <div>
       <Router>
       <Routes>
+        <Route path= '/' element={<Home/>} exact/> {/*to be removed*/}
+        <Route path= '/about' element={<About setStoredToken={setStoredToken}/>} exact />{/*to be removed*/}
         <Route path="/login" element={<Login setStoredToken={setStoredToken}/>} exact/>
         <Route path="/signup" element={<Signup setStoredToken={setStoredToken}/>} exact/>
       </Routes>
       </Router>
       </div>
     )}
+    <Footer />
   </div>
   );
 }
