@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div>
-      <Navbar /> {/*to be removed*/}
+      <Navbar />{/**to detelete */}
     {storedToken ? (
       <Router>
         {role === "admin"? <AdminApp setStoredToken={setStoredToken}/> : 
@@ -56,8 +56,9 @@ function App() {
       <div>
       <Router>
       <Routes>
-        <Route path= '/' element={<Home/>} exact/> {/*to be removed*/}
-        <Route path= '/about' element={<About setStoredToken={setStoredToken}/>} exact />{/*to be removed*/}
+        <Route path= '/' element={<Home/>} exact/>{/**to detelete */}
+        <Route path= '/about' element={<About setStoredToken={setStoredToken}/>} exact />{/**to detelete */}
+        <Route path= '/events' element={<Event setStoredToken={setStoredToken}/>} exact />
         <Route path="/login" element={<Login setStoredToken={setStoredToken}/>} exact/>
         <Route path="/signup" element={<Signup setStoredToken={setStoredToken}/>} exact/>
       </Routes>
