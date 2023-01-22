@@ -27,7 +27,7 @@
   font-size: 20px;
 }
 .link-btn button{
-background-color: rgb(13, 105, 209);
+background-color: rgb(255, 145, 0);
 width: 180px;
 height: 40px;
 align-items: center;
@@ -40,7 +40,8 @@ margin-left: 80px;
 }
 .link-btn button:hover{
 cursor: pointer;
-transition: 0.3s ease-in-out;
+/* transition: 0.3s ease-in-out; */
+/* background: white; */
 
 
 }

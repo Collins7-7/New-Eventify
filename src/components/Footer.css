@@ -6,7 +6,7 @@
     color: #A9A9A9;
     min-height: 100%;
   }
-  .text{
+  .texts{
   
     text-decoration: none;
   }
@@ -17,10 +17,10 @@
   .header{
     color: rgb(255, 145, 0);
   }
-  .text:hover{
+  .texts:hover{
     color: rgb(255, 145, 0);
   }
-  .text{
+  .texts{
     color: gray;
   }
   .fab:hover {

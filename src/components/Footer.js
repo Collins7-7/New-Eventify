@@ -17,22 +17,22 @@ function Footer() {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="header text-uppercase fw-bold">Services</h6>
               <p>
-                <a href="#!" className="text">
+                <a href="#!" className="texts">
                   Ticket Booking
                 </a>
               </p>
               <p>
-                <a href="#!" className="text">
+                <a href="#!" className="texts">
                   Ticket Advertising
                 </a>
               </p>
               <p>
-                <a href="#!" className="text">
+                <a href="#!" className="texts">
                   BrandFlow
                 </a>
               </p>
               <p>
-                <a href="#!" className="text">
+                <a href="#!" className="texts">
                   Event Management
                 </a>
               </p>
@@ -40,23 +40,23 @@ function Footer() {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="header text-uppercase fw-bold">Quick links</h6>
               <p>
-                <a href="/" className="text">
+                <a href="/" className="texts">
                   Home
                 </a>
               </p>
               <p>
-                <a href="/categories" className="text">
-                  Categories
+                <a href="/events" className="texts">
+                  Events
                 </a>
               </p>
               <p>
-                <a href="/Contact Us" className="text">
+                <a href="/Contact" className="texts">
                   Contact Us
                 </a>
               </p>
               <p>
-                <a href="/signup" className="text">
-                  Help
+                <a href="/about" className="texts">
+                  About us
                 </a>
               </p>
             </div>
