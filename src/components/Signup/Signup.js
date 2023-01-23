@@ -1,12 +1,13 @@
 
 import React from 'react';
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Signup.css";
+import { useNavigate,Link } from "react-router-dom";
+import "./signup.css"
 
 
 const Signup = ({setStoredToken}) => {
 
+  const navigate = useNavigate();
  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,6 +36,7 @@ const Signup = ({setStoredToken}) => {
         localStorage.setItem("token", data.jwt);
         console.log(data);
         setStoredToken(data.jwt);
+        navigate("/");
       });
 
     setUsername("");
@@ -46,24 +48,24 @@ const Signup = ({setStoredToken}) => {
 
 
     return ( 
-      <div className="signup">
-      <span className="signupTitle">Signup</span>
-      <form className="signupForm" onSubmit={handleSubmit}>
+      <div className="signup_page">
+      <span className="signup__Title">Signup</span>
+      <form className="signup__Form" onSubmit={handleSubmit}>
           <label>Username</label>
           <input value={username} onChange={(e) => setUsername(e.target.value)}type="text" placeholder="username" id="name" name="name" />
           <label>Email</label>
-          <input value={email} className="signupInput" type="text" placeholder="Enter email..."
+          <input value={email} className="signup__Input" type="text" placeholder="Enter email..."
            onChange={(e)=>setEmail(e.target.value)} id="email" name="email"
           />
           <label>Password</label>
-          <input value={password} className="signupInput" type="password" placeholder="Enter password..."
+          <input value={password} className="signup__Input" type="password" placeholder="Enter password..."
            onChange={(e)=>setPassword(e.target.value)} id="password" name="password"
           />
           <label>Password Confirmation</label>
-          <input value={password_confirmation} className="signupInput" type="password" placeholder="Confirm password..."
+          <input value={password_confirmation} className="signup__Input" type="password" placeholder="Confirm password..."
            onChange={(e)=>setPasswordConfirmation(e.target.value)} id="password_confirmation"  name="password_confirmation" 
           />
-          <button className="signupButt" type="submit">Signup</button>
+          <button className="signup__Butt" type="submit">Signup</button>
           <p>
           Already have an account?
           <Link to="/login" className="linktag">

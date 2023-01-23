@@ -7,7 +7,7 @@ function Eventdetails() {
   const [event, setEvent] = useState([])
 
   useEffect(() => {
-    fetch(`https://eventify-app.onrender.com/api/v1/events/${id}`)
+    fetch(`/api/v1/events/${id}`)
     .then((r) => r.json())
     .then((event) => setEvent(event))
 

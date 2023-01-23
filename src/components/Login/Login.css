@@ -1,15 +1,16 @@
-.login{
+.login__page{
     height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background:url("https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"); */
+    background:url("https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1336&q=80"); 
     background-size: cover;
 }
 
 .loginTitle{
     font-size: 50px;
+    
 }
 .loginForm{
     width: 30%;

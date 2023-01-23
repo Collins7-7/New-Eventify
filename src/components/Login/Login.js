@@ -42,7 +42,7 @@ function Login({setStoredToken}){
   };
 
     return(
-        <div className="login">
+        <div className="login__page">
         <span className="loginTitle">Login</span>
         <form className="loginForm" onSubmit={handleSubmit}>
             <label htmlFor="email">username</label>
