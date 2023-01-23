@@ -54,3 +54,4 @@ export const MultiStepForm = () => {
     </div>
   );
 };
+export default MultiStepForm
