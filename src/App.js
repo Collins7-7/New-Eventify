@@ -13,6 +13,7 @@ import Event from './components/Event';
 import Contact from './components/Contact';
 import Eventdetails from './components/Eventdetails';
 import Footer from './components/Footer';
+import MultiStepForm from './components/MultiStepForm'
 
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
         <Route path= '/about' element={<About setStoredToken={setStoredToken}/>} exact />
         <Route path= '/events' element={<Event setStoredToken={setStoredToken}/>} exact />
         <Route path= 'events/:id' element={<Eventdetails setStoredToken={setStoredToken}/>} />
-        <Route path= 'events/:id/book_event' element={<h2>Booking form {/*setStoredToken={setStoredToken}*/} </h2>} />
+        <Route path= 'events/:id/book_event' element={<MultiStepForm setStoredToken={setStoredToken}/>} exact/>
         <Route path= '/contact' element={<Contact setStoredToken={setStoredToken}/>} exact />
         </Routes>
         </div>}
@@ -64,6 +65,7 @@ function App() {
       </Router>
       </div>
     )}
+    {/* <MultiStepForm/> */}
     <Footer />
   </div>
   );
