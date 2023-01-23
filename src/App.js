@@ -13,6 +13,7 @@ import Event from './components/Event';
 import Contact from './components/Contact';
 import Eventdetails from './components/Eventdetails';
 import Footer from './components/Footer';
+import LandingPage from './components/Landingpage/LandingPage';
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
       <div>
       <Router>
       <Routes>
+        <Route path ="/" element={<LandingPage setStoredToken={setStoredToken}/>}/>
         <Route path="/login" element={<Login setStoredToken={setStoredToken}/>} exact/>
         <Route path="/signup" element={<Signup setStoredToken={setStoredToken}/>} exact/>
       </Routes>
