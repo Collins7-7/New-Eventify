@@ -1,0 +1,43 @@
+.Home{
+  background-image: url("./images/event-managers-showing-something-laptop-couple-min (1).jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  background-position: center left;
+  display: flex;
+}
+.home-header{
+  width: 45%;
+  align-items: center;
+  justify-content: center;
+  
+  padding-top: 10px;
+  margin-left: 60px;
+}
+.home-header h1{
+  margin-top: 100px;
+  color: black;
+  font-size: 36px;
+}
+.home-header h2{
+  padding-top: 10px;
+  color: black;
+  opacity: 0.7;
+  font-size: 20px;
+}
+.link-btn button{
+background-color: rgb(255, 145, 0);
+width: 180px;
+height: 40px;
+align-items: center;
+border-radius:8px;
+font-size: 20px;
+color: white;
+margin-top: 40px;
+transition: 0.3s ease-in-out;
+margin-left: 80px;
+}
+.link-btn button:hover{
+cursor: pointer;
+}
