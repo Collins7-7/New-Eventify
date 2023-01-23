@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import "../Navbar.css"
 import { FaBars } from 'react-icons/fa'
 import { useState } from 'react'
@@ -8,17 +9,17 @@ function Navbar({setStoredToken}) {
 
 const [State, setState] = useState(false)
 
-// let navigate=useNavigate()
+let navigate=useNavigate()
     return(
         <>
         <nav>
             
             <div className="nav-container">
             
-            <div className='logo'>
-                <h2>Eventify</h2>
-            </div>
-        <div className="navbar">
+            {/* <div className='logo'>
+                <img onClick ={()=> {navigate("/")}} />
+            </div> */}
+        <div className="home-navbar">
             <ul className={State ? "nav-links-mobile" : "nav-links"} onClick={() => setState(false)}>
 
                 <p>
