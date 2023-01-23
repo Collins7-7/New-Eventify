@@ -16,9 +16,9 @@ let navigate=useNavigate()
             
             <div className="nav-container">
             
-            {/* <div className='logo'>
-                <img onClick ={()=> {navigate("/")}} />
-            </div> */}
+            <div className='logo'>
+              <h1> Eventify </h1>
+            </div>
         <div className="home-navbar">
             <ul className={State ? "nav-links-mobile" : "nav-links"} onClick={() => setState(false)}>
 
