@@ -58,7 +58,6 @@ function App() {
       <div>
       <Router>
       <Routes>
-        <Route path= '/events' element={<Event setStoredToken={setStoredToken}/>} exact />
         <Route path="/login" element={<Login setStoredToken={setStoredToken}/>} exact/>
         <Route path="/signup" element={<Signup setStoredToken={setStoredToken}/>} exact/>
       </Routes>
