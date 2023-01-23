@@ -12,6 +12,7 @@ import About from './components/About';
 import Event from './components/Event';
 import Contact from './components/Contact';
 import Eventdetails from './components/Eventdetails';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
       </Router>
       </div>
     )}
+    <Footer />
   </div>
   );
 }
