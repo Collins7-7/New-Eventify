@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Signup.css";
 
 
@@ -63,6 +64,12 @@ const Signup = ({setStoredToken}) => {
            onChange={(e)=>setPasswordConfirmation(e.target.value)} id="password_confirmation"  name="password_confirmation" 
           />
           <button className="signupButt" type="submit">Signup</button>
+          <p>
+          Already have an account?
+          <Link to="/login" className="linktag">
+            Login
+          </Link>
+          </p>
       </form>
   </div>
        )

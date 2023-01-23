@@ -41,7 +41,7 @@ margin: 10px 0;
 .signupButt{
     margin-top: 30px;
     cursor: pointer;
-    background-color:rgb(13, 105, 209);
+    background-color:rgb(202, 64, 202);
     border:none;
     color: white;
     border-radius: 10px;
@@ -51,7 +51,7 @@ margin: 10px 0;
     /* margin-right: 10px; */
 }
 
-.signupLoginButton{
+/* .signupLoginButton{
     position: absolute;
     top: 60px;
     right: 20px;
@@ -61,4 +61,4 @@ margin: 10px 0;
     border: none;
     padding: 10px;
     border-radius: 10px;
-}
+} */

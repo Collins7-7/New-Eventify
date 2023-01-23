@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import {useState} from "react";
 import "./Login.css";
 
@@ -50,6 +50,12 @@ function Login({setStoredToken}){
             <label htmlFor="password">password</label>
             <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="********" id="password" name="password" />
             <button type="submit" className='loginButton'>Log In</button>
+            <p className='login_signup'>
+            Don't have an account? 
+            <Link to="/signup" >
+              Sign up
+            </Link>
+            </p>
         </form>
     </div>
     )

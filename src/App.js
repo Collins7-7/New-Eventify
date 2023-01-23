@@ -51,6 +51,7 @@ function App() {
         <Route path= 'events/:id/book_event' element={<h2>Booking form {/*setStoredToken={setStoredToken}*/} </h2>} />
         <Route path= '/contact' element={<Contact setStoredToken={setStoredToken}/>} exact />
         </Routes>
+        <Footer />
         </div>}
         
       </Router>
@@ -64,7 +65,6 @@ function App() {
       </Router>
       </div>
     )}
-    <Footer />
   </div>
   );
 }
