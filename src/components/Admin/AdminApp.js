@@ -22,7 +22,7 @@ function AdminApp() {
 
 
     return (
-    <Admin loginPage={AdminLogin} layout={MyLayout} dataProvider={restProvider("http://localhost:3000/api/v1")} authProvider={authProvider} >
+    <Admin loginPage={AdminLogin} layout={MyLayout} dataProvider={restProvider("https://eventify-app.onrender.com/api/v1")} authProvider={authProvider} >
         <Resource name='categories' list={CategoryList}
         create={CategoryCreate} edit={CategoryEdit}/>
         <Resource name='events' list={EventList}

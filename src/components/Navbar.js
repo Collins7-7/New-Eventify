@@ -50,6 +50,7 @@ let navigate=useNavigate()
                  onClick={() => {
                    localStorage.setItem("token", "");
                     setStoredToken("");
+                    navigate("/");
                    }}
                  className='text'>
                   Log out

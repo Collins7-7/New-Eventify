@@ -16,7 +16,7 @@ const Signup = ({setStoredToken}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("/api/v1/users", {
+    fetch("https://eventify-app.onrender.com/api/v1/users", {
       method: "POST",
       headers: {
         Accepts: "application/json",
