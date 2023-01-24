@@ -23,7 +23,7 @@ nav{
     height: 42px;
     margin-top: 10px;
     margin-left: 80px;
-    /* border-radius: 6px; */
+    border-radius: 6px;
     transition: 0.3s;
 }
 .home-navbar button:hover{
@@ -39,6 +39,7 @@ nav{
     color: black;
 }
 .home-navbar ul{
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
