@@ -23,7 +23,7 @@ function App() {
   const [loggedInUserId, setLoggedInUserId] = useState("");
 
   useEffect(() => {
-    fetch("/api/v1/profile ", {
+    fetch("https://eventify-app.onrender.com/api/v1/profile ", {
       method: "GET",
       headers: {
         Accepts: "application/json",

@@ -7,7 +7,7 @@ function Event() {
   const [selectedCategory, setSelectedCategory] = useState("Categories")
 
   useEffect(() => {
-    fetch("/api/v1/events")
+    fetch("https://eventify-app.onrender.com/api/v1/events")
       .then((r) => r.json())
       .then((events) => setEvents(events))
 
