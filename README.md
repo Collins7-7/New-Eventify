@@ -23,7 +23,7 @@ To see the application live in your local host, you need to clone via https or s
 
 ### Deployment
 The website is deployed on vercel
-Deployed front end link: [Eventify App](new-eventify-p3mwykxe7-collins7-7.vercel.app)
+Deployed front end link: [Eventify App](https://new-eventify-p3mwykxe7-collins7-7.vercel.app/)
 
 Video of the app: [Eventify Video](https://watch.screencastify.com/v/5cpDBEjXsaCC9KwpHO1X)
 
