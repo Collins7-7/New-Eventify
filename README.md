@@ -1,7 +1,7 @@
 ## EVENTIFY APP
 
 This is a web application built with React and Ruby on Rails for the front-end and back-end respectfully.
-The platform helps you get to know different events happening around you. Eventify aims at bringing people together for different events where they get an unforgettable experience and create connections.
+The Eventify app can be used by an Admin who can perform different CRUD functionalities, and it can also be used by a simple user who can get to view the different events available and make bookings for the events.
 
 
 ## Technology
@@ -18,24 +18,22 @@ You need an IDE of your choice (preferably Visual Studio Code). You will need a 
 
 # Set up
 
-The application interacts with its backend via a RESTful API where it allows users or admin to Create, Read,Update and Delete data via the methods POST, GET, PATCH/PUT and DELETE.
-To see the application live in your local host, you need to clone via https or ssh.After a successful clone, you move into the project directory and run npm install to install the required node modules, then you run the command:
-- `npm start` : on [http://localhost:4000]
-Ensure your back end server is running when creating an account,by cloning the back end and running bundle install to install required dependencies. 
-To start back end server you run the command:
-- `rails s`: run the backend on [http://localhost:3000]
+The application interacts with its backend via a RESTful API where it allows the Admin to Create, Read,Update and Delete data via the methods POST, GET, PATCH/PUT and DELETE and a simple user to View the different events and Create bookings.
+To see the application live in your local host, you need to clone via https or ssh.After a successful clone, you move into the project directory and run **npm install --legacy-peer-deps** to install the required node modules, then you run the command: **npm start**
 
 ### Deployment
 The website is deployed on vercel
-Deployed front end link:
+Deployed front end link: [Eventify App](new-eventify-2dtvuqmoy-collins7-7.vercel.app)
 
-The Backend is deployed on Render.
-Deployed back end link:
+Video of the app: [Eventify Video](https://watch.screencastify.com/v/5cpDBEjXsaCC9KwpHO1X)
 
 
-## COMPLETE MVPS
-- A user is able to login or create an account.
-- A user can see different event categories and specific events.
-- A user is also able to book a specific event.
-- An admin can add an event, Update event,create an event as well as delete event.
+## ADMIN MVPS
+- 
+- An admin can Create a new event, Update an existing event, as well as delete an existing event.
+To be able to use the Admin's dashboard login with the username "Messi" and the password "leomessi".
 
+## Simple User MVPS
+- A simple user is able to login or create an account by signing up.
+- A simple user can see different events and can filter the specific events they'd like to view by selecting the category from a drop down.
+- A simple user is also able to book tickets for whatever events they'd want to book.
