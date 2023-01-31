@@ -20,6 +20,7 @@ import MultiStepForm from './components/MultiStepForm'
 function App() {
   const [storedToken, setStoredToken] = useState(localStorage.getItem("token"));
   const [role, setRole] = useState("");
+  const [username, setUsername] = useState("");
   const [loggedInUserId, setLoggedInUserId] = useState("");
 
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
     })
       .then((res) => res.json())
       .then((data) => {
+        setUsername(data.user.username);
         setRole(data.user.role);
         setLoggedInUserId(data.user.id);
       });
@@ -42,7 +44,7 @@ function App() {
     <div>
     {storedToken ? (
       <Router>
-        {role === "admin"? <AdminApp setStoredToken={setStoredToken}/> : 
+        {username === "Messi"? <AdminApp setStoredToken={setStoredToken}/> : 
         <div>
         <Navbar setStoredToken={setStoredToken}/>
         <Routes>

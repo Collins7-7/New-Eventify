@@ -8,7 +8,8 @@ function AdminNavBar() {
     <div className='nav-bar'>
     <Navbar className="navbar" bg="dark" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="/login" >ADMIN LOGIN</Navbar.Brand>
+        <Navbar.Brand href="/signup" >ADMIN LOGIN</Navbar.Brand>
+        <Navbar.Brand href="/" >HOME</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
