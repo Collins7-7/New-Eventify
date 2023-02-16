@@ -29,7 +29,6 @@ Video of the app: [Eventify Video](https://watch.screencastify.com/v/5cpDBEjXsaC
 
 
 ## ADMIN MVPS
-- 
 - An admin can Create a new event, Update an existing event, as well as delete an existing event.
 To be able to use the Admin's dashboard login with the username "Messi" and the password "leomessi".
 
